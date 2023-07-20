@@ -1,0 +1,21 @@
+openapi: 3.0.0
+info:
+  title: GoStore API
+  description: Documentation for GoStore API.
+  version: 1.0.0
+servers:
+  - url: http://0.0.0.0:3333
+    description: URL development
+  - url: http://staging.gostore.com
+    description: URL staging
+
+tags:
+
+paths:
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
